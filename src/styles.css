@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    background-color: #e8d9ff;
+background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+a{
+    text-decoration: unset;
+}
+
+footer {
+    
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* HEADER */
+
+#header{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem; 
+    height: 3rem;  
+}
+
+/* #header a{
+    padding-left: 1.25rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+} */
+
+.page-name{
+    padding-left: 1.25rem;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+
+#header button,.my-post-btn{
+    border: none;
+    display: flex;
+    align-items: center;
+    background: none;
+    color: white;
+    text-align: center;
+    padding: 0 1rem;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+}
+
+
+#header button:hover,.my-post-btn:hover {
+    /* background-color: #fdb813; */
+    /* color: #000000; */
+    color: #7c5295;
+}
+
+
+#header .auth-options{
+    display: flex;
+    height: 100%;
+    align-items: stretch;
+    padding: 0 1rem;
+}
+
+
+
+
+
+/* LOGIN */
+
+.outer-login{
+    text-align: center;
+    padding: 7.5% 30%;
+    
+}
+
+.inner-login{
+    display: flex;
+    border-radius: 1rem;
+    background-color: #fff;
+    height: 25rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-login input{
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    width: 12rem;
+}
+
+.login-username{
+    margin-top: 20%;
+}
+
+.inner-login button{
+    margin-top: 20%;
+    padding: 0.5rem;
+    border: solid black 1px;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: #fff;
+}
+
+.inner-login button:hover{
+    background-color: #e8d9ff;
+}
+
+
+
+
+
+
+/* REGISTER */
+
+.register{
+    height: 30rem;
+}
+
+/* HOME */
+
+.welcome{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+}
+
+.welcome button{
+    margin: 1rem;
+    font-size: 1.4rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 2px gray;
+}
+
+.welcome button:hover{
+    background-color:#7c5295;
+}
+
+
+
+
+/* POST */
+
+.post-outer{
+    padding: 1% 5%;
+}
+
+.post-inner{
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 1.5%;
+    text-align: left;
+}
+
+.post-content{
+    padding: 0.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-title{
+    padding: 0.5%;
+}
+
+.author{
+    font-size: 0.7rem;
+    padding: 0.5%;
+}
+
+.delete-btn{
+    text-align: center;
+}
+
+.delete-btn button{
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+
+
+/* CREATE */
+
+.create{
+    text-align: center;
+    padding: 2%
+}
+
+.create input{
+    margin: 2%;
+    padding: 0.25%;
+    width: 30%;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 0.4rem;
+    border: none;
+    outline: none;
+}
+
+.create textarea{
+    padding: 2%;
+    width: 80%;
+    height: 18rem;
+    border-radius: 0.4rem;
+    border: none;
+    outline: none;
+}
+
+.create button{
+    font-size: 0.9rem;
+    margin: 0.5%;
+    padding: 0.25%;
+}
+
+
+
+/* POST EXPAND */
+
+.post-expand{
+    background: #fff;
+    border-radius: 0.5rem;
+    margin: 2% 7.5%;
+    padding: 2%;
+    text-align: center;
+}
+
+.post-expand h1{
+    padding-bottom: 1%;
+    font-size: 1.8rem;
+}
+
+.post-expand h4{
+    padding-bottom: 1%;
+}
+
+.post-expand p{
+    text-align: left;
+    padding: 2%;
+}
+
+
+/* USERS */
+
+.user-posts{
+    padding: 4% 2%;
+}
+
+
+
+
+
+
+
+/* MISC */
+
+.error-message{
+    border: solid red 1px;
+    border-radius: 0.5rem;
+    color: red;
+    margin-top: 1rem;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.error-message button{
+    background: none;
+    color: red;
+    border: none;
+    cursor: pointer;
+    margin-left: 3%;
+}
+
+
+@media screen and (max-width:900px) {
+    .outer-login{
+        padding: 7.5% 25%;
+        
+    }
+}
+
+@media screen and (max-width:530px) {
+#header{
+    height: 2.5rem;
+}
+
+.page-name{
+        font-size: 1.1rem;
+        padding-left: 0.5rem;
+    }
+
+    #header button{
+        font-size: 0.7rem;
+        padding: 0 0.8rem;
+    }
+
+    .my-post-btn{
+        font-size: 0.7rem;
+    }
+
+    .outer-login{
+        padding: 15% 15%;
+
+        
+    }
+
+    .inner-login input{
+        margin: 1rem;
+        font-size: 1.1rem;
+        width: 11rem;
+    }
+
+    .inner-login h1{
+        font-size: 1.6rem;
+    }
+    .error-message{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .outer-login{
+        padding: 15% 15%;
+
+        
+    }
+
+    .inner-login input{
+        margin: 1rem;
+        font-size: 0.9rem;
+        width: 7.5rem;
+    }
+
+    .inner-login h1{
+        font-size: 1.4rem;
+    }
+
+    .inner-login button{
+        font-size: 0.7rem;
+    }
+
+    .error-message{
+        font-size: 0.7rem;
+    }
+    .error-message button{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width:285px) {
+    #header{
+        height: 2rem;
+    }
+    
+    .page-name{
+            font-size: 0.8rem;
+            padding-left: 0.5rem;
+        }
+    
+        #header button,.my-post-btn{
+            font-size: 0.5rem;
+            padding: 0 0.8rem;
+        }
+
+        .outer-login{
+            padding: 15% 15%;
+    
+            
+        }
+
+        .inner-login{
+            height: 20rem;
+        }
+    
+        .inner-login input{
+            margin: 1rem;
+            font-size: 0.7rem;
+            width: 6rem;
+        }
+    
+        .inner-login h1{
+            font-size: 0.9rem;
+        }
+
+        .inner-login button{
+            font-size: 0.5rem;
+        }
+}
